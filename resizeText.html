@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>resizeText!</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="resizeText.js"></script>
+
+<script>
+
+$(function(){
+	
+	$( 'a' ).click(function(e){
+		e.preventDefault();
+	});
+	
+   // Call function $.fn.resizeText and pass to it all arguments.
+	$( '.btnIncrease' ).click(function(){
+	   $.fn.resizeText( 0, 10, 'h3, .div1, a', 'i' );	
+	});
+	
+	// Call function $.fn.resizeText and pass to it all arguments.
+	$( '.btnDecrease' ).click(function(){
+	   $.fn.resizeText( 0, 10, 'h3, .div1, a', 'd' );	
+	});
+	
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+   <div class="row">
+      <h1 class="well well-lg text-center">Using resizeText to resize over all DOM elements.</h1>
+   </div>
+   
+   <div class="row">
+      <div class="text-center">
+         <button type="button" class="btnDecrease btn btn-danger btn-sm"><span class="glyphicon glyphicon-minus"></span>&nbsp;Decrease text</button>
+         <button type="button" class="btnIncrease btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>&nbsp;Increase text</button>
+      </div>
+   </div>
+   
+   <div class="row">
+      <div class="someElements">
+         
+         <h3>I am a header level 3.</h3>
+         <div class="div1 alert alert-success">I am a div.</div>
+         <div class="div2 alert alert-danger"><p>I am a paragraph inside of a div.( This paragraph won't be resized! )</p></div>
+         <a href="#">I am a link.</a>
+      
+      </div>
+   </div>
+
+</div>
+
+</body>
+</html>
