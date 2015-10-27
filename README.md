@@ -19,4 +19,8 @@ Just call the function "$.fn.resizeText() and pass to it four( 4 ) arguments lik
  Example: $.fn.resizeText( <b>0</b>, 5, 'h3, .myDiv, #myDiv2, a, p', 'i' ); // This will increase the text infinitely!<br />
  Example: $.fn.resizeText( <b>0</b>, 5, 'h3, .myDiv, #myDiv2, a, p', 'd' ); // This will decrease the text infinitely!
  
+ Live preview and download:
+ 
+ http://smallguiti.com/apps/resizetext/
+ 
  
